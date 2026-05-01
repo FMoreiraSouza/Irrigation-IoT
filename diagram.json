@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "author": "Sistema de Irrigação",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": { "env": "micropython-20231227-v1.22.0" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -135.7, "left": 460.6, "attrs": {} },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": 120,
+      "left": 380,
+      "attrs": { "hornColor": "blue" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 294.2,
+      "left": 172.8,
+      "attrs": { "color": "green" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 15.6, "left": 359, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 43.2,
+      "left": 153.05,
+      "rotate": 90,
+      "attrs": { "value": "330" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "pot1:VCC", "esp:3V3", "red", [ "v28.8", "h-504.99" ] ],
+    [ "pot1:GND", "esp:GND.2", "black", [ "v19.2", "h-388.84" ] ],
+    [ "pot1:SIG", "esp:34", "green", [ "v11.5", "h-518.8", "v84.5" ] ],
+    [ "servo1:VCC", "esp:VIN", "red", [ "v0" ] ],
+    [ "servo1:GND", "esp:GND.1", "black", [ "h-34.4", "v70", "h-355.2", "v-86.4" ] ],
+    [ "servo1:PWM", "esp:18", "blue", [ "h-15.2", "v-83.4" ] ],
+    [ "btn1:1.r", "esp:17", "green", [ "v-28.8", "h-115", "v-96" ] ],
+    [ "btn1:2.r", "esp:GND.1", "black", [ "h29", "v-67", "h-288", "v-105.6" ] ],
+    [ "led1:A", "esp:19", "orange", [ "v0" ] ],
+    [ "led1:C", "r1:1", "black", [ "h-38", "v-48", "h-153.6" ] ],
+    [ "r1:2", "esp:GND.1", "black", [ "v152.4", "h-211.2", "v-76.8" ] ]
+  ],
+  "dependencies": {}
+}
