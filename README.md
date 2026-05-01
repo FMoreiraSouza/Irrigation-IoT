@@ -53,7 +53,7 @@ A solução implementa mecanismos de segurança como timeout automático de irri
 4. Configure o token do Blynk no arquivo `main.py`:
    ```python
    BLYNK_TOKEN = "SEU_TOKEN_AQUI"
-5. Clique em Start Simulation
+5. No painel do Wokwi clique em Start Simulation
 6. Interaja com:
 - Potenciômetro → simula umidade
 - Botão → controle manual
@@ -63,10 +63,10 @@ A solução implementa mecanismos de segurança como timeout automático de irri
 
 ### Tópicos utilizados
 
-ds/Umidade: envio da umidade atual
-ds/Válvula: estado da irrigação (ligado/desligado)
-ds/Alerta: alerta de solo seco
-downlink/ds/Acionador: comando remoto
+- ds/Umidade: envio da umidade atual
+- ds/Válvula: estado da irrigação (ligado/desligado)
+- ds/Alerta: alerta de solo seco
+- downlink/ds/Acionador: comando remoto
 
 ---
 
