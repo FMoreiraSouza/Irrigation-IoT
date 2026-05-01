@@ -9,7 +9,7 @@
 
 ## 📃 Descrição
 
-O Irrigation ESP32 é um sistema IoT de automação de irrigação desenvolvido com ESP32 e MicroPython, com integração em tempo real via protocolo MQTT utilizando a plataforma Blynk Cloud.
+O Irrigation IoT é um sistema de automação de irrigação desenvolvido com ESP32 e MicroPython, com integração em tempo real via protocolo MQTT utilizando a plataforma Blynk Cloud.
 O sistema realiza o monitoramento contínuo da umidade do solo (simulada via potenciômetro), acionando automaticamente uma válvula controlada por servo motor quando necessário. Além disso, permite controle manual tanto por botão físico quanto remotamente via aplicativo Blynk.
 A solução implementa mecanismos de segurança como timeout automático de irrigação, evitando desperdício de água e possíveis falhas operacionais. A arquitetura segue um modelo modular, separando responsabilidades entre controle de hardware, comunicação MQTT e lógica de negócio.
 
@@ -72,7 +72,7 @@ downlink/ds/Acionador: comando remoto
 
 ## 🔌 Simulação do Projeto
 
-[A simulação completa pode ser acessada no Wokwi](https://wokwi.com/projects/450288761201413121)
+A simulação completa pode ser acessada no [Wokwi](https://wokwi.com/projects/450288761201413121)
 
 ---
 
