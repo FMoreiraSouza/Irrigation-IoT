@@ -72,7 +72,7 @@ downlink/ds/Acionador: comando remoto
 
 ## 🔌 Simulação do Projeto
 
-[A simulação completa pode ser acessada no Wokwi](https://wokwi.com/projects/450288761201413121)
+A simulação completa pode ser acessada no [Wokwi](https://wokwi.com/projects/450288761201413121)
 
 ---
 
